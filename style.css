@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants hover, responsive, focus, group-hover {
+    .bg-gradient-blue {
+      background-color: #21d4fd;
+      background-image: linear-gradient(19deg, #b721ff 0%, #21d4fd 100%);
+    }
+
+    .bg-gradient-orange {
+      background-color: #ffe53b;
+      background-image: linear-gradient(147deg, #ff2525 0%, #ffe53b 74%);
+    }
+  }
+}
+
+.button {
+  @apply bg-red-400 text-white font-bold px-4 py-2 rounded mr-1 mb-2;
+}
+
+.button:hover {
+  @apply bg-blue-400;
+}
+
+.button--pink {
+  @apply bg-pink-400;
+}
+.button--pink:hover {
+  @apply bg-green-400;
+}
+
+.button--teal {
+  @apply bg-blue-400;
+}
+.button--teal:hover {
+  @apply bg-yellow-400;
+}
+
+.button--pill {
+  @apply rounded-full;
+}
+
+.button--square {
+  @apply rounded-none;
+}
